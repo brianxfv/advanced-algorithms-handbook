@@ -1,4 +1,3 @@
-```markdown
 # ⚡ Module 02: Bit Manipulation
 
 Bit manipulation is the art of operating on data at its most granular level: the individual bit. For a computer engineer, mastering bitwise operations is essential for high-performance computing, memory-constrained environments, and competitive programming.
@@ -24,12 +23,15 @@ These are the fundamental operators that every engineer must have in their muscl
 
 ## 🚀 Common "Bit Magic" Tricks
 
-These operations run in **$O(1)$** and are significantly faster than their arithmetic counterparts:
+These operations run in **$O(1)$** and are significantly faster than their arithmetic counterparts.
 
 ### 1. Check if a number is Even or Odd
 ```cpp
-if (n & 1) // Odd
-else       // Even
+if (n & 1) {
+    // n is Odd
+} else {
+    // n is Even
+}
 
 ```
 
@@ -51,18 +53,18 @@ n = n & (n - 1);
 
 ```
 
-### 4. Get/Set/Toggle the -th Bit
+### 4. Basic Bit Operations (-th bit)
 
-* **Get**: `(n >> i) & 1`
-* **Set**: `n | (1 << i)`
-* **Clear**: `n & ~(1 << i)`
-* **Toggle**: `n ^ (1 << i)`
+* **Get bit**: `(n >> i) & 1`
+* **Set bit**: `n | (1 << i)`
+* **Clear bit**: `n & ~(1 << i)`
+* **Toggle bit**: `n ^ (1 << i)`
 
 ---
 
 ## 🧠 Memory Engineering: The Bitset
 
-In C++, `std::bitset<N>` allows you to handle a large number of bits efficiently. Instead of using a `bool` array (where each bool typically takes 8 bits of memory), a bitset uses exactly **1 bit per element**, reducing the memory footprint by **8x**.
+In C++, `std::bitset<N>` allows you to handle a large number of bits efficiently. Instead of using a `bool` array (where each `bool` typically takes **8 bits** of memory), a bitset uses exactly **1 bit** per element, reducing the memory footprint by **8x**.
 
 ---
 
@@ -70,14 +72,10 @@ In C++, `std::bitset<N>` allows you to handle a large number of bits efficiently
 
 Remember that most modern systems use **Two's Complement** to represent signed integers.
 
-* To get `-n`, the CPU performs `~n + 1`.
-* This is why the range of a signed 8-bit integer is  to .
-* Understanding this is crucial for preventing overflow bugs in low-level systems.
+1. To get `-n`, the CPU performs `~n + 1`.
+2. The range of a signed 8-bit integer is ** to **.
+3. Understanding this is crucial for preventing overflow bugs and understanding how the CPU handles negative numbers at the hardware level.
 
 ---
 
 **Author:** Brian Gimenez
-
-```
-
-```
