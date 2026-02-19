@@ -1,63 +1,80 @@
 # 📘 Advanced Algorithms Handbook
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![Status: In Progress](https://img.shields.io/badge/Status-In--Progress-orange)
-![Level: Advanced](https://img.shields.io/badge/Level-Advanced-blue)
+<div align="center">
 
-Bienvenido al **Advanced Algorithms Handbook**. Este repositorio es un recurso educativo diseñado para ingenieros en computación, estudiantes de ciencias de la computación y desarrolladores que buscan profundizar en la teoría y práctica de algoritmos de alta complejidad.
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)
+![Status: In Progress](https://img.shields.io/badge/Status-In--Progress-orange?style=for-the-badge)
+![Level: Advanced](https://img.shields.io/badge/Level-Advanced-blue?style=for-the-badge)
 
-Como ingeniero y docente, mi objetivo es proporcionar no solo código funcional, sino un análisis riguroso de la eficiencia y el diseño de cada solución.
+**A high-performance pedagogical resource for Computer Engineers and Developers.**
 
----
-
-## 🚀 Filosofía del Repositorio
-
-A diferencia de otros repositorios de algoritmos, este manual se basa en tres pilares:
-1.  **Rigor Matemático**: Análisis asintótico detallado y demostraciones de corrección.
-2.  **Eficiencia de Ingeniería**: Implementaciones que consideran la gestión de memoria y la localidad de referencia.
-3.  **Claridad Pedagógica**: Documentación estructurada para facilitar la enseñanza y el aprendizaje autónomo.
+</div>
 
 ---
 
-## 📂 Estructura del Handbook
+## 🌟 Overview
 
-El contenido está organizado de forma progresiva, desde los fundamentos hasta las estructuras de datos y algoritmos más complejos:
+Welcome to the **Advanced Algorithms Handbook**. This repository is a specialized educational resource designed for computer engineers, CS students, and developers aiming to master high-complexity algorithmic theory and practice.
 
-| Carpeta | Título | Descripción |
+As an engineer and educator, my goal is to provide more than just functional code: this is a deep dive into **rigorous efficiency analysis** and **low-level architectural design**.
+
+---
+
+## 🚀 Repository Philosophy
+
+This handbook stands on three fundamental pillars that differentiate it from standard algorithm collections:
+
+1.  **Mathematical Rigor**: Detailed asymptotic analysis ($O, \Omega, \Theta$) and formal proofs of correctness.
+2.  **Engineering Efficiency**: Implementations optimized for memory management, cache locality, and hardware constraints.
+3.  **Pedagogical Clarity**: Structured documentation designed for seamless classroom integration and self-paced learning.
+
+---
+
+## 📂 Handbook Structure
+
+The content is organized progressively, moving from low-level foundations to complex abstract data structures:
+
+| Module | Title | Key Topics |
 | :--- | :--- | :--- |
-| **[00_Fundamentals](./00_Fundamentals)** | Fundamentos | Complejidad, bits, recursión y gestión de memoria. |
-| **[01_Sorting](./01_Sorting)** | Ordenamiento | De QuickSort a RadixSort y ordenamientos externos. |
-| **[02_Searching](./02_Searching)** | Búsqueda | Búsqueda binaria avanzada y aplicaciones. |
-| **[03_Greedy](./03_Greedy)** | Algoritmos Voraces | Estrategias de elección óptima local. |
-| **[04_Dynamic_Programming](./04_Dynamic_Programming)** | Programación Dinámica | Optimización, memorización y enfoques Bottom-Up. |
-| **[05_Graphs](./05_Graphs)** | Teoría de Grafos | Flujo máximo, caminos mínimos y conectividad. |
-| **[06_Data_Structures](./06_Data_Structures)** | Estructuras Avanzadas | Segment Trees, Fenwick Trees, Treaps y DSU. |
-| **[07_Mathematics](./07_Mathematics)** | Teoría de Números | GCD, Primalidad, Combinatoria y FFT. |
-| **[08_String_Algorithms](./08_String_Algorithms)** | Algoritmos de Cadenas | KMP, Suffix Automata y Tries. |
-| **[09_Computational_Geometry](./09_Computational_Geometry)** | Geometría Computacional | Convex Hull, intersección de líneas y Voronoi. |
+| **[00_Fundamentals](./00_Fundamentals)** | 🏗️ Fundamentals | Complexity, Bit Manipulation, TCO Recursion, Memory. |
+| **[01_Sorting](./01_Sorting)** | 📊 Sorting | QuickSort, RadixSort, and External Sorting. |
+| **[02_Searching](./02_Searching)** | 🔍 Searching | Advanced Binary Search and Predicate-based Search. |
+| **[03_Greedy](./03_Greedy)** | 💰 Greedy | Local optimal strategies and Matroid theory. |
+| **[04_Dynamic_Programming](./04_Dynamic_Programming)** | 🧠 Dynamic Programming | Memoization, Bottom-Up, and DP Optimizations. |
+| **[05_Graphs](./05_Graphs)** | 🕸️ Graph Theory | Max Flow, Shortest Paths, and Connectivity. |
+| **[06_Data_Structures](./06_Data_Structures)** | 🌲 Advanced Structures | Segment Trees, Fenwick Trees, Treaps, and DSU. |
+| **[07_Mathematics](./07_Mathematics)** | 🔢 Number Theory | GCD, Primality, Combinatorics, and FFT. |
+| **[08_String_Algorithms](./08_String_Algorithms)** | 🧵 String Algorithms | KMP, Suffix Automata, and Tries. |
+| **[09_Computational_Geometry](./09_Computational_Geometry)** | 📐 Comp. Geometry | Convex Hull, Line Sweep, and Voronoi Diagrams. |
 
 ---
 
-## 🛠️ Tecnologías y Herramientas
+## 🛠️ Tech Stack & Methodology
 
-- **Lenguajes Principales**: C++ (para alta performance y gestión de memoria) y Python (para prototipado y claridad algorítmica).
-- **Testing**: Pruebas unitarias para validar casos borde (edge cases).
-- **Documentación**: Renderizado de fórmulas mediante $\LaTeX$.
-
----
-
-## 🏫 Notas para Docentes
-
-Si planeas usar este material para clases o formación técnica:
-- Cada algoritmo incluye una sección de **"Common Pitfalls"** (errores comunes).
-- Se proporcionan **análisis de complejidad temporal y espacial** comparativos.
-- El código sigue estándares de limpieza (Clean Code) para ser legible en proyecciones o material impreso.
+* **Primary Languages**: 
+    * **C++20**: For high-performance, memory-critical implementations.
+    * **Python 3.x**: For high-level logic prototyping and algorithmic clarity.
+* **Testing**: Unit testing suites to validate edge cases and stress-test performance.
+* **Documentation**: Theoretical foundations rendered via $\LaTeX$ for mathematical precision.
 
 ---
 
-## 📝 Licencia
+## 🏫 Educator's Toolkit
 
-Este proyecto está bajo la Licencia MIT. Siéntete libre de usarlo, modificarlo y compartirlo con tus alumnos.
+If you are using this material for teaching or technical training, you will find:
+* **Common Pitfalls**: A dedicated section in each module highlighting frequent implementation errors.
+* **Comparative Analysis**: Time and space complexity trade-offs explained in depth.
+* **Clean Code**: Adherence to industry standards to ensure readability during lectures or code reviews.
 
 ---
-Creado con ❤️ por un Ingeniero y Futuro Docente.
+
+## 📝 License & Authorship
+
+This project is licensed under the **MIT License**. Feel free to use, modify, and distribute it for educational purposes.
+
+**Author:** [Brian Gimenez](https://github.com/your-username-here)
+
+---
+<div align="center">
+  Made with ❤️ for the Dev Community
+</div>
